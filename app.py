@@ -4,7 +4,7 @@ import tensorflow as tf
 
 #model = joblib.load('model.pkl')
 model = tf.keras.models.load_model('best_model.h5')
-categories = ["Normal", "Tubercolosis", "Pneumonia"]
+categories = ["Normal","Pneumonia", "Tubercolosis"]
 
 def classify(img):
     img = img.reshape((-1, 224, 224, 3))
