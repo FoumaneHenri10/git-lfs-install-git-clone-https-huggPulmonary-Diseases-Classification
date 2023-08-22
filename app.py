@@ -12,7 +12,7 @@ def classify(img):
     return {categories[i]: float(pred[i]) for i in range(3)}
 
 image = gr.inputs.Image(shape=(224, 224))
-label = gr.outputs.Label(num_top_classes=2)
+label = gr.outputs.Label(num_top_classes=3)
 examples = ["Normal.png", "Tuberculosis.png", "Pneumonia.jpeg"]
     
 
