@@ -1,8 +1,6 @@
 import gradio as gr
-#import joblib
 import tensorflow as tf
 
-#model = joblib.load('model.pkl')
 model = tf.keras.models.load_model('best_model.h5')
 categories = ["Normal","Pneumonia", "Tubercolosis"]
 
